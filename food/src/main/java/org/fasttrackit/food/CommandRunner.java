@@ -2,11 +2,8 @@ package org.fasttrackit.food;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.fasttrackit.food.model.Categories;
 import org.fasttrackit.food.model.MealItem;
 import org.fasttrackit.food.model.Nutrients;
-//import org.fasttrackit.food.model.TypeOfNutrient;
-import org.fasttrackit.food.model.TypeOfNutrient;
 import org.fasttrackit.food.service.MealItemService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -24,7 +21,7 @@ public  class CommandRunner implements CommandLineRunner {
     @Override
     public void run(String... args) {
         log.info("Runner is populating with data");
-       service.addAll(
+       service.addAllMealItem(
                 List.of(
                         MealItem.builder()
                                 .foodItem("egg")

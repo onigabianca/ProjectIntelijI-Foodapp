@@ -6,3 +6,5 @@ public enum TypeOfNutrient {
     LIPID,
     VITAMIN
 }
+
+
